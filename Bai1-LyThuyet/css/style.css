@@ -1,0 +1,74 @@
+* {
+	font-family: 'Georgia', Times, serif;
+}
+
+body {
+	width: 500px;
+	border: 1px solid #0033FF;
+	margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.title {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.profile-img {
+	float: left;
+}
+
+.profile-content {
+	overflow: scroll;
+	height: 100px;
+}
+
+.facts {
+	margin-top: 20px;
+}
+
+.fact-list {
+	list-style-image: url('../image/star.png');
+}
+
+.comment-list {
+	margin-top: 20px;
+}
+
+.comment {
+	margin-bottom: 10px;
+}
+
+.comment-text {
+	background-color: #ECECEC;
+}
+
+.comment-image {
+	width: 25px;
+	height: 20px;
+	float: left;
+	padding-left: 50px;
+}
+
+.author {
+	color: blue;
+}
+
+.form-title {
+	text-align: center;
+	font-weight: bold;
+}
+
+.label {
+	width: 20%;
+	display: block;
+	float: left;
+}
+
+.commnet-textarea {
+	width: 60%;
+	line-height: 
+}
