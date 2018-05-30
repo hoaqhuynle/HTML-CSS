@@ -1,0 +1,12 @@
+.logo {
+	background-color: #2d2f35;
+}
+
+.our-product {
+	background: url("../image/home_intro_image.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.product-image {
+	float: right;
+}
