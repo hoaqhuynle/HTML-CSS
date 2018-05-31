@@ -1,12 +1,128 @@
-.logo {
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: Verdana, "Arial", Helvetica, sans-serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+header .container {
 	background-color: #2d2f35;
 }
 
-.our-product {
-	background: url("../image/home_intro_image.jpg") no-repeat center center fixed;
-	background-size: cover;
+.product .container {
+	background-image: url("../image/bg_home_intro.gif");
+	height: 300px;
+	padding-left: 50px;
 }
 
-.product-image {
+.product-img {
 	float: right;
+}
+
+.content {
+	width: 40%;
+}
+
+.content h3 {
+	color: gold;
+	font-family: monospace;
+	font-size: 23px;
+}
+
+.content p {
+	color: #ffffff;
+	font-size: 12px;
+	margin-top: 35px;
+}
+
+.gallery .container {
+	background-color: #2d2f35;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.gallery-img {
+	width: 100%;
+	height: auto;
+}
+
+.gallery .col-3 {
+	position: relative;
+	padding: 10px;
+}
+
+.index {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.title {
+	font-size:20px;
+	font-family:monospace;
+	color: gold;
+}
+
+.article-list .container {
+	background-color: #2d2f35;
+}
+
+.article-content {
+	font-size:9pt;
+	text-align:justify;
+	color: #ffffff;
+}
+
+.article1 {
+	text-align: justify;
+	background-image: url('../image/home_services_bg_design.gif');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	padding: 50px;
+}
+
+.article2 {
+	text-align: justify;
+	background-image: url('../image/home_services_bg_marketing.gif');
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 50px;
+}
+
+footer {
+	text-align: center;
+}
+
+footer .container {
+	background-image: url('../image/bg_footer.gif');
+	height: 120px;
+	color: #ffffff;
+	line-height: 120px;
 }
