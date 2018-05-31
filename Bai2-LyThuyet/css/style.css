@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.container {
+	width: 360px;
+    margin: 0 auto;
+}
+
+.item .container {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #e6f3fb;
+}
+
+.title {
+    font-size: 12px;
+    padding: 3px;
+}
+
+.content {
+    border-top: 2px solid #ffa500;
+    padding-top: 10px;
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+}
+
+.article .row {
+    background-color: #ffffff;
+}
+
+.sub-title {
+    color: blue;
+    font-weight: bold;
+}
+
+.chat {
+    background-color: #faf0bf;
+    margin-top: 3px;
+    padding: 5px;
+}
+
+.name {
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.chat-text {
+    color: cornflowerblue;
+}
+
+.sub-title2 {
+    font-weight: bold;
+}
+
+.date {
+    color: #808080;
+}
+
+.read-all {
+    background-color: #f4f4ec !important;
+}
+
+.read-all .col-9 {
+    padding: 10px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.link-new-mobile {
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 5px;
+    display: block;
+}
+
+.content-final {
+    padding-bottom: 10px;
+}
+
+.competitions ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.competitions li a {
+    text-decoration: none;
+    color: green;
+}
