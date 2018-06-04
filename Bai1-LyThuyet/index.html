@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Bài 1 - Lý thuyết</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -48,41 +49,21 @@
 
 	<div class="form-comment">
 		<div class="form-title">Your comment</div>
-		<table>
-			<tr>
-				<td class="label">
-					<label class="label" for="your-name">Your name: </label>
-				</td>
-				<td>
-					<input type="text" id="your-name" name="your-name"> <br>
-				</td>
-			</tr>
 
-			<div class="clearfix"></div>
-			
-			<tr>
-				<td class="label">
-					<label class="label" for="your-email">Your email (will not public): </label>
-				</td>
-				<td>
-					<input type="text" id="your-email" name="your-email"> <br>
-				</td>
+		<div class="row">
+			<label class="col-4" for="your-name">Your name: </label>
+			<input class="col-8" type="text" id="your-name" name="your-name"> <br>
+		</div>
 
-				<div class="clearfix"></div>
-			</tr>
+		<div class="row">
+			<label class="col-4" class="label" for="your-email">Your email (will not public): </label>
+			<input class="col-8" type="text" id="your-email" name="your-email"> <br>
+		</div>
 
-			<tr>
-				<td class="label">
-					<label class="label" for="your-commnet">Comment: </label>
-				</td>
-				<td>
-					<textarea class="commnet-textarea" id="your-comment" rows="5"></textarea>
-				</td>
-
-				<div class="clearfix"></div>
-			</tr>
-
-		</table>
+		<div class="row">
+			<label class="col-4" class="label" for="your-commnet">Comment: </label>
+			<textarea class="col-8" class="commnet-textarea" id="your-comment" rows="5"></textarea>
+		</div>
 	</div>
 </body>
 </html>
