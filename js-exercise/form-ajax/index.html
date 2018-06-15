@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Ajax</title>
+
+    <link rel="stylesheet" href="./css/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="row-username">
+            <label class="col-4" for="username">Username: </label>
+            <input class="col-8" type="text" name="username" id="username">
+            <p class="push-4 col-8" style="display: none; color: #e74c3c" id="err-username"></p>
+        </div>
+        <div class="row" id="row-password">
+            <label class="col-4" for="password">Password: </label>
+            <input class="col-8" type="password" name="password" id="password">
+            <p class="push-4 col-8" style="display: none; color: #e74c3c" id="err-password"></p>
+        </div>
+        <div class="row" id="row-email">
+            <label class="col-4" for="email">Email: </label>
+            <input class="col-8" type="text" name="email" id="email">
+            <p class="push-4 col-8" style="display: none; color: #e74c3c" id="err-email"></p>
+        </div>
+        <div class="row" id="birthday">
+            <label class="col-4" for="date">Birthday: </label>
+            <input class="col-7" type="text" name="date" id="date-text" readonly>
+            <i class="far fa-calendar-alt col-1" id="calendar-button"></i>
+        </div>
+        <div class="row col-8" id="controller">
+            <button id="previous-year">
+                <i class="fas fa-angle-double-left"></i>
+            </button>
+            <button id="previous-month">
+                <i class="fas fa-angle-left"></i>
+            </button>
+
+            <select name="months" id="months">
+                <option value="0">Jan</option>
+                <option value="1">Feb</option>
+                <option value="2">Mar</option>
+                <option value="3">Apr</option>
+                <option value="4">May</option>
+                <option value="5">Jun</option>
+                <option value="6">Jul</option>
+                <option value="7">Aug</option>
+                <option value="8">Sep</option>
+                <option value="9">Oct</option>
+                <option value="10">Nov</option>
+                <option value="11">Dec</option>
+            </select>
+
+            <select name="years" id="years">
+            </select>
+
+            <button id="next-month">
+                <i class="fas fa-angle-right"></i>
+            </button>
+            <button id="next-year">
+                <i class="fas fa-angle-double-right"></i>
+            </button>
+        </div>
+
+        <div class="row">
+            <table id="calendar">
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="container row buttons">
+        <button class="col-6" id="submit">submit</button>
+        <button class="col-6" id="refresh">refresh</button>
+        <p id="message"></p>
+    </div>
+
+    <div class="container row">
+        <p style="color: #e74c3c;" id="message"></p>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
